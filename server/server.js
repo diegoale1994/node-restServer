@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose');
+mongoose.set('useCreateIndex', true);
 require('./config/config');
 app.use(bodyParser.urlencoded({ extended: false }))
 
