@@ -8,6 +8,11 @@ process.env.PORT = process.env.PORT || 3000;
 //=====
 //Entorno
 process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
+//vencimiento
+process.env.CADUCIDAD_TOKEN = '1h';
+
+//seed
+process.env.SEED = process.env.SEED || 'hangar18';
 
 
 //database
