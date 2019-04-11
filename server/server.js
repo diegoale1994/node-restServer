@@ -5,10 +5,14 @@ const mongoose = require('mongoose');
 mongoose.set('useCreateIndex', true);
 require('./config/config');
 app.use(bodyParser.urlencoded({ extended: false }))
-
+const path = require('path');
 
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+
+
+//public
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 app.use(require('./routes/index'));
 

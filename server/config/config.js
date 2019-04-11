@@ -23,3 +23,6 @@ if (process.env.NODE_ENV === 'dev') {
 }
 //urlDB = 'mongodb+srv://diegoale1994:hangar18@cluster0-cc6wt.mongodb.net/cafe';
 process.env.URLDB = urlDB;
+
+//GOOGLE CLIENT
+process.env.CLIENT_ID = process.env.CLIENT_ID || '1035614112624-a0ppv7h0pacdfkdq1qp9p4a9d1plmsir.apps.googleusercontent.com';
